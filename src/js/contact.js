@@ -149,7 +149,7 @@ if (contactForm) {
     if (!validateForm()) {
       return false;
     } else {
-      const receiveEmail = "carclubtire@gmail.com";
+      const receiveEmail = "lrgarage@gmail.com";
       const subject = `[Contact-Form] ${nameInput.value}`;
       const body = `${messageInput.value}\n\n${nameInput.value}\n${emailInput.value}`;
       const mailtoUrl = `mailto:${encodeURIComponent(receiveEmail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
