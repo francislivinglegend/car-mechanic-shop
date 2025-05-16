@@ -1,4 +1,5 @@
 {
+  "homepage": "https://francislivinglegend.github.io/car-mechanic-shop",
   "name": "car-mechanic-shop-html5-bootstrap-template",
   "description": "This is a fully responsive and animated HTML 5 template for a car mechanic shop. The template has been designed to provide a professional and modern look to the website. It includes a responsive navigation bar that makes it easy for users to navigate through the different sections of the website.",
   "private": true,
@@ -8,7 +9,9 @@
     "dev": "vite",
     "build": "vite build --emptyOutDir",
     "test": "vite preview",
-    "build-bootstrap": "sass --no-source-map ./src/scss/bs-dynamic.scss ./src/css/bs-compiled.css"
+    "build-bootstrap": "sass --no-source-map ./src/scss/bs-dynamic.scss ./src/css/bs-compiled.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
@@ -23,7 +26,7 @@
     "vite-plugin-webfont-dl": "^3.10.4"
   },
   "dependencies": {
-    "20": "^3.1.9",
+    "20": "^1.0.0",
     "@glidejs/glide": "^3.7.1",
     "bootstrap": "^5.3.5",
     "boxicons": "^2.1.4"

@@ -13,14 +13,14 @@
  */
 const alertBoxesData = [
   {
-    body: `We are Open 7 days a week.`,
+    body: `Estamos abertos 7 dias por semana.`,
   },
   {
-    body: `Both Appointments and Walkins are Welcome.`,
+    body: `Atendemos por marcação e sem marcação.`,
   },
   {
-    body: `Special Discounts for Veterans & Military Personel, Students, and Senior Citizens.`,
-  },
+    body: `Descontos especiais para estudantes e seniores.`,
+  },  
 ];
 
 /**
@@ -59,30 +59,32 @@ if (alertBoxesElement) alertBoxesElement.innerHTML = generateAlertBoxHtml(alertB
 const dealsSlidesData = [
   {
     icon: `<i class="icon bx bx-color display-6"></i>`,
-    title: `Wheel Alignment starting at just $59.99`,
-    body: `🚗 Car pulling left or right? Steering feeling off? You might need a wheel alignment!
-For a limited time only, get your wheel alignment today!`,
+    title: `Alinhamento de Rodas a partir de apenas 59,99€`,
+    body: `🚗 O carro puxa para a esquerda ou para a direita? A direção está desajustada? Pode precisar de um alinhamento de rodas!  
+  Aproveite esta oferta por tempo limitado e faça o seu alinhamento hoje mesmo!`,
     price: 59.99
   },
   {
     icon: `<i class="icon bx bxs-car-wash display-6"></i>`,
-    title: `Wheel Alignment + Synthetic Oil Change for Just $79.99!`,
-    body: `Is your car pulling to one side? Feeling a little shaky on the road? It might be time for a wheel alignment! And while you're at it, give your engine the fresh start it deserves with a synthetic oil change.`,
+    title: `Alinhamento de Rodas + Troca de Óleo Sintético por apenas 79,99€!`,
+    body: `O seu carro puxa para um dos lados? Sente-se instável na estrada? Pode estar na altura de fazer um alinhamento de rodas!  
+  E aproveite para dar ao seu motor o arranque fresco que merece com uma troca de óleo sintético.`,
     price: 79.99
   },
   {
     icon: `<i class="icon bx bx-stop-circle display-6"></i>`,
-    title: `Coolant + Brake Flush starting at just $79.99`,
-    body: `Did you know neglecting your coolant & brake fluid can lead to overheating, poor braking, and expensive repairs? 😨 Don't wait until it's too late!`,
+    title: `Limpeza do Sistema de Arrefecimento + Travões a partir de 79,99€`,
+    body: `Sabia que negligenciar o líquido de arrefecimento e o fluido dos travões pode causar sobreaquecimento, travagem deficiente e reparações caras? 😨  
+  Não espere até ser tarde demais!`,
     price: 79.99
   },
   {
     icon: `<i class="icon bx bx-wind display-6"></i>`,
-    title: `AC System Flush starting at $99.99!`,
-    body: `Don't let Florida's heat turn your car into a sauna! ☀️ If your AC isn't cooling like it used to, it might be time for a coolant flush.`,
+    title: `Limpeza do Sistema de Ar Condicionado a partir de 99,99€!`,
+    body: `Não deixe o calor transformar o seu carro numa sauna! ☀️  
+  Se o seu ar condicionado já não arrefece como antes, pode ser hora de uma limpeza ao sistema de arrefecimento.`,
     price: 99.99
-
-  },
+  },  
   // {
   //   icon: `<i class="icon bx bxs-car-wash display-6"></i>`,
   //   title: `Conventional Oil Change for just $18.99`,
@@ -140,7 +142,7 @@ const generateDealsSlidesHtml = (slidesData) => {
           `</div>` +
           `<div class="ag-course-body">
             <p>${body}</p>
-            ${price ? `<div class="btn btn-outline-light fs-3 py-1 px-3">$ ${price.toFixed(2)}</div>` : ''}
+            ${price ? `<div class="btn btn-outline-light fs-3 py-1 px-3">${price.toFixed(2)}€</div>` : ''}
           </div>` +
         `</div>` +
       `</li>`;

@@ -7,23 +7,23 @@ const counterBoxesData = [
   {
     id: "business-counter",
     number: 5,
-    text: "Years in Business",
+    text: "Anos em Atividade",
   },
   {
     id: "tires-counter",
     number: 650,
-    text: "Tires Changed",
+    text: "Pneus Substituídos",
   },
   {
     id: "wheels-counter",
     number: 2250,
-    text: "Wheels Aligned",
+    text: "Rodas Alinhadas",
   },
   {
     id: "oil-counter",
     number: 5000,
-    text: "Oils Changed",
-  },
+    text: "Óleos Substituídos",
+  },  
 ];
 const counterBoxesHtml = counterBoxesData.map((cb) => {
   const id = cb.id ? cb.id : ``;
@@ -81,29 +81,29 @@ function countWhenVisible(element, targetCount, speed) {
 // Setup WhyUs Counter Boxes
 const reasonBoxesData = [
   {
-    title: `Unmatched Expertise`,
-    body: `At Car Club Tire & Auto Repair Service, our team of highly skilled and certified technicians brings years of experience and expertise to the table. You can trust us to handle your vehicle with precision and care, ensuring top-notch repairs and maintenance.`,
+    title: `Expertise Inigualável`,
+    body: `Na LR Garage, a nossa equipa de técnicos altamente qualificados e certificados traz anos de experiência e conhecimento especializado. Pode confiar em nós para tratar do seu veículo com precisão e cuidado, garantindo reparações e manutenção de excelência.`,
   },
   {
-    title: `Customer-Centric Approach`,
-    body: `We prioritize your satisfaction and go the extra mile to provide personalized attention to every customer. Our friendly and approachable team is always ready to listen to your concerns and offer tailored solutions that suit your specific needs.`,
+    title: `Abordagem Centrada no Cliente`,
+    body: `Damos prioridade à sua satisfação e fazemos sempre um esforço extra para prestar uma atenção personalizada a cada cliente. A nossa equipa simpática e acessível está sempre disponível para ouvir as suas preocupações e oferecer soluções feitas à medida das suas necessidades específicas.`,
   },
   {
-    title: `Wide Range of Services`,
-    body: `From tire work and maintenance to comprehensive auto repairs, we offer a diverse range of services under one roof. Whether it's routine maintenance or complex repairs, we've got you covered, saving you time and hassle.`,
+    title: `Ampla Gama de Serviços`,
+    body: `Desde trabalhos e manutenção de pneus até reparações automóveis completas, oferecemos uma diversidade de serviços num só local. Quer seja manutenção rotineira ou reparações complexas, estamos aqui para si, poupando-lhe tempo e complicações.`,
   },
   {
-    title: `Quality and Reliability`,
-    body: `We are committed to using top-quality parts and materials in all our services. Our emphasis on reliability ensures that your vehicle receives the best possible care, enhancing its performance and longevity.`,
+    title: `Qualidade e Fiabilidade`,
+    body: `Comprometemo-nos a usar peças e materiais da mais alta qualidade em todos os nossos serviços. A nossa ênfase na fiabilidade garante que o seu veículo receba os melhores cuidados possíveis, melhorando o seu desempenho e longevidade.`,
   },
   {
-    title: `Transparent Pricing`,
-    body: `At Car Club, we believe in transparent and fair pricing. You can count on us to provide honest estimates and no hidden fees, allowing you to make informed decisions without any surprises.`,
+    title: `Preços Transparentes`,
+    body: `Na LR Garage, acreditamos em preços justos e transparentes. Pode contar connosco para obter orçamentos honestos e sem custos ocultos, permitindo-lhe tomar decisões informadas sem surpresas.`,
   },
   {
-    title: `Swift Turnaround`,
-    body: `We understand that your time is valuable, which is why we strive to deliver efficient and timely service. Our team works diligently to get you back on the road as quickly as possible, without compromising on quality.`,
-  },
+    title: `Resposta Rápida`,
+    body: `Sabemos que o seu tempo é valioso, por isso esforçamo-nos por prestar um serviço eficiente e atempado. A nossa equipa trabalha com dedicação para que volte à estrada o mais rapidamente possível, sem comprometer a qualidade.`,
+  },  
 ];
 const reasonBoxesHtml = reasonBoxesData.map((rs) => {
   const title = rs.title ? rs.title : ``;

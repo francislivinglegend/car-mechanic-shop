@@ -22,7 +22,7 @@ function storeStatus() {
     hour12: true,
     timeZone: timeZone,
   });
-  const orangeCityDayToday = new Intl.DateTimeFormat("en-US", options).format(localTime);
+  const orangeCityDayToday = new Intl.DateTimeFormat("pt-pt", options).format(localTime);
   const outputDay = `${orangeCityDayToday} ${formattedTime}`;
   const hours = localTime.getHours();
   const dayOfWeek = localTime.toLocaleString("en-US", { timeZone, weekday: "long" });
@@ -33,21 +33,21 @@ function storeStatus() {
     (dayOfWeek === "Sunday" && hours >= 9 && hours < 17) ||
     (dayOfWeek !== "Sunday" && hours >= 8 && hours < 19)
   ) {
-    outputTime = '<span class="open text-success fw-bold">Open</span> come on down';
+    outputTime = '<span class="open text-success fw-bold">Aberto</span>, venha visitar-nos';
   } else if (
     (dayOfWeek === "Sunday" && hours >= 17 && hours < 24) ||
     (dayOfWeek !== "Sunday" && hours >= 19 && hours < 24)
   ) {
-    outputTime = '<span class="closed text-danger fw-bold">Closed</span> at the moment see you tomorrow. &#128578;';
+    outputTime = '<span class="closed text-danger fw-bold">Fechado</span> de momento, até amanhã. &#128578;';
   } else if (hours >= 0 && (dayOfWeek === "Sunday" ? hours < 8 : hours < 9)) {
     if (dayOfWeek === "Sunday" && hours < 8) {
-      outputTime = '<span class="closed text-danger fw-bold">Closed</span> at the moment see you at 08:00 AM. &#128564;';
+      outputTime = '<span class="closed text-danger fw-bold">Fechado</span> de momento, até às 09:00. &#128564;';
     } else if (dayOfWeek !== "Sunday" && hours < 9) {
-      outputTime = '<span class="closed text-danger fw-bold">Closed</span> at the moment see you at 09:00 AM. &#128564;';
+      outputTime = '<span class="closed text-danger fw-bold">Fechado</span> de momento, até às 09:00. &#128564;';
     }
   }
 
-  return `It is ${outputDay}, We are ${outputTime}`;
+  return `Hoje é ${outputDay}, estamos ${outputTime}`;
 }
 
 // Function to update the store status in real-time
